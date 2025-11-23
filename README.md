@@ -1,6 +1,21 @@
-<p align="center" style="font-size: 40px; color: #5C0011; font-weight: bold; margin: 0;">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<p align="center" 
+   style="
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        color: #5C0011;
+        font-weight: 600;
+        padding: 12px 20px;
+        border: 2px solid #5C0011;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+        background: #fff;
+   ">
     FIAP - Faculdade de Informática e Administração Paulista
 </p>
+
 
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="agro_system/assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
@@ -89,25 +104,26 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
 | `rubber.csv` | Dados da produção de borracha |
 
 ## 🤖 Modelo
+
 - `modelo_caneca_pote.h5` — Modelo neural utilizado no projeto, armazenado em formato HDF5.
 
-📦 agro_system/
-├── 📁 phase1/        — Pré-processamento inicial dos dados e organização das bases.
-├── 📁 phase2/        — Limpeza avançada, tratamento de outliers e padronização.
-├── 📁 phase3/        — Feature Engineering e geração de variáveis derivadas.
-├── 📁 phase4/        — Modelagem inicial, testes de algoritmos e validações.
-├── 📁 phase5/        — Treinamento avançado e otimização de hiperparâmetros.
-├── 📁 phase6/        — Avaliação de performance, métricas, gráficos e relatórios.
-├── 📁 phase7/        — Deploy, integração, pipeline final e automação do sistema.
+├── 📁 **phase1/**        — Pré-processamento inicial dos dados e organização das bases.
+├── 📁 **phase2/**        — Limpeza avançada, tratamento de outliers e padronização.
+├── 📁 **phase3/**        — Feature Engineering e geração de variáveis derivadas.
+├── 📁 **phase4/**        — Modelagem inicial, testes de algoritmos e validações.
+├── 📁 **phase5/**        — Treinamento avançado e otimização de hiperparâmetros.
+├── 📁 **phase6/**        — Avaliação de performance, métricas, gráficos e relatórios.
+├── 📁 **phase7/**        — Deploy, integração, pipeline final e automação do sistema.
 
-├── 📄 README.md              — Documentação geral do projeto.
-├── 📄 main.py                — Script principal do pipeline do Agro System.
-├── 📄 tst.py                 — Arquivos de testes rápidos e utilitários.
+├── 📄 **README.md**              — Documentação geral do projeto.
+├── 📄 **main.py**                — Script principal do pipeline do Agro System.
+├── 📄 **tst.py**                 — Arquivo de testes rápidos e utilitários.
 
-├── 📄 cocoa.csv              — Base de dados referente à cultura de cacau.
-├── 📄 oil_palm.csv           — Base relacionada ao cultivo de dendê (oil palm).
-├── 📄 rice.csv               — Dados sobre produção e indicadores do arroz.
-├── 📄 rubber.csv             — Base referente à cultura da borracha natural.
+├── 📄 **cocoa.csv**              — Base de dados referente à cultura de cacau.
+├── 📄 **oil_palm.csv**           — Base relacionada ao cultivo de dendê (oil palm).
+├── 📄 **rice.csv**               — Dados sobre produção e indicadores do arroz.
+├── 📄 **rubber.csv**             — Base referente à cultura da borracha natural.
 
-├── 📦 modelo_caneca_pote.h5  — Modelo treinado em Deep Learning (formato HDF5).
+├── 📦 **modelo_caneca_pote.h5**  — Modelo treinado em Deep Learning (formato HDF5).
+
 
