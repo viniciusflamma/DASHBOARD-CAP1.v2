@@ -113,12 +113,7 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: #ffffff;
     border: 2px solid #ff007f;
-    background-image: url('data:image/svg+xml,\
-        <svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'200\\' height=\\'200\\'>\
-        <rect width=\\'100%\\' height=\\'100%\\' fill=\\'none\\'/>\
-        <circle cx=\\'50\\' cy=\\'50\\' r=\\'3\\' fill=\\'%23ff00aa33\\'/>\
-        <circle cx=\\'150\\' cy=\\'150\\' r=\\'2\\' fill=\\'%23ff00aa22\\'/>\
-        </svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'><rect width=\'100%\' height=\'100%\' fill=\'none\'/><circle cx=\'50\' cy=\'50\' r=\'3\' fill=\'%23ff00aa33\'/><circle cx=\'150\' cy=\'150\' r=\'2\' fill=\'%23ff00aa22\'/></svg>');
     background-size: 200px;
 ">
 
@@ -137,6 +132,7 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
         border: 1px solid #ff4dc4;
         box-shadow: inset 0 0 15px #ff008855;
         color: #ffb3e6;
+        white-space: pre;
     ">
 
 📦 <span style="color:#ff4dc4;">agro_system/</span>
