@@ -112,8 +112,6 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: #ffffff;
     border: 2px solid #ff007f;
-    background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'><rect width=\'100%\' height=\'100%\' fill=\'none\'/><circle cx=\'50\' cy=\'50\' r=\'3\' fill=\'%23ff00aa33\'/><circle cx=\'150\' cy=\'150\' r=\'2\' fill=\'%23ff00aa22\'/></svg>');
-    background-size: 200px;
 ">
 
     <marquee behavior="alternate" scrollamount="5">
