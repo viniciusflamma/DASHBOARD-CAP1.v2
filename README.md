@@ -1,4 +1,4 @@
-### FIAP - Faculdade de Informática e Administração Paulista
+## FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="agro_system/assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
@@ -7,17 +7,17 @@
 <br>
 
 ## Nome do projeto
-# PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
+##  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
 
 ## Nome do grupo
-# Equipe Fiap
+## • Equipe Fiap
 
 ## 👨‍🎓 Integrantes:
-- <a href="endrewalves42@gmail.com"> Endrew Alves dos Santos - • RM563646</a>
-- <a href="nisoxds@gmail.com"> Vinícius Divino dos Santos - • RM566269</a>
-- <a href="carlos.souza004@gmail.com"> Carlos Eduardo de Souza - • RM566487</a>
-- <a href="esteves.tayna96@gmail.com"> Tayná Esteves - • RM562491</a>
-- <a href="fontesjoaovittor@gmail.com"> João Vittor Fontes - • RM565999</a>
+- <a href="endrewalves42@gmail.com"> Endrew Alves dos Santos  • RM563646</a>
+- <a href="nisoxds@gmail.com"> Vinícius Divino dos Santos  • RM566269</a>
+- <a href="carlos.souza004@gmail.com"> Carlos Eduardo de Souza  • RM566487</a>
+- <a href="esteves.tayna96@gmail.com"> Tayná Esteves  • RM562491</a>
+- <a href="fontesjoaovittor@gmail.com"> João Vittor Fontes  • RM565999</a>
 
 
 ## 👩‍🏫 Professores:
@@ -46,9 +46,9 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
 
     • Integrar sensores físicos, inteligência artificial e dashboards em uma arquitetura única e escalável.
 
-## 📁 Estrutura de pastas
+# 📁 Estrutura de pastas
 
-# 🌱Estrutura do Repositório
+## 🌱Estrutura do Repositório
 
 ### 📘 phase1 — Preparação Inicial
 Contém scripts e rotinas necessárias para organizar os datasets brutos, remover inconsistências básicas e padronizar formatos.
