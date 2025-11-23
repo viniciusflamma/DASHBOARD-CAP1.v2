@@ -105,25 +105,58 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
 
 ## 🤖 Modelo
 
-- `modelo_caneca_pote.h5` — Modelo neural utilizado no projeto, armazenado em formato HDF5.
+<div style="
+    background: linear-gradient(135deg, #000000, #1a001f, #ff007f);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px #ff007f88;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #ffffff;
+    border: 2px solid #ff007f;
+    background-image: url('data:image/svg+xml,\
+        <svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'200\\' height=\\'200\\'>\
+        <rect width=\\'100%\\' height=\\'100%\\' fill=\\'none\\'/>\
+        <circle cx=\\'50\\' cy=\\'50\\' r=\\'3\\' fill=\\'%23ff00aa33\\'/>\
+        <circle cx=\\'150\\' cy=\\'150\\' r=\\'2\\' fill=\\'%23ff00aa22\\'/>\
+        </svg>');
+    background-size: 200px;
+">
 
-├── 📁 **phase1/**        — Pré-processamento inicial dos dados e organização das bases.
-├── 📁 **phase2/**        — Limpeza avançada, tratamento de outliers e padronização.
-├── 📁 **phase3/**        — Feature Engineering e geração de variáveis derivadas.
-├── 📁 **phase4/**        — Modelagem inicial, testes de algoritmos e validações.
-├── 📁 **phase5/**        — Treinamento avançado e otimização de hiperparâmetros.
-├── 📁 **phase6/**        — Avaliação de performance, métricas, gráficos e relatórios.
-├── 📁 **phase7/**        — Deploy, integração, pipeline final e automação do sistema.
+    <marquee behavior="alternate" scrollamount="5">
+        <h1 style="font-size: 36px; color: #ff4dc4; text-shadow: 0 0 10px #ff4dc4;">
+            🚀✨ ESTRUTURA DO PROJETO — AGRO SYSTEM ✨🚀
+        </h1>
+    </marquee>
 
-├── 📄 **README.md**              — Documentação geral do projeto.
-├── 📄 **main.py**                — Script principal do pipeline do Agro System.
-├── 📄 **tst.py**                 — Arquivo de testes rápidos e utilitários.
+    <pre style="
+        font-size: 16px;
+        background: #0a0a0a88;
+        padding: 20px;
+        border-radius: 12px;
+        overflow-x: auto;
+        border: 1px solid #ff4dc4;
+        box-shadow: inset 0 0 15px #ff008855;
+        color: #ffb3e6;
+    ">
 
-├── 📄 **cocoa.csv**              — Base de dados referente à cultura de cacau.
-├── 📄 **oil_palm.csv**           — Base relacionada ao cultivo de dendê (oil palm).
-├── 📄 **rice.csv**               — Dados sobre produção e indicadores do arroz.
-├── 📄 **rubber.csv**             — Base referente à cultura da borracha natural.
+📦 <span style="color:#ff4dc4;">agro_system/</span>
+├── 📁 <span style="color:#ff66cc;">phase1/</span>        — Pré-processamento inicial dos dados e organização das bases.
+├── 📁 <span style="color:#ff66cc;">phase2/</span>        — Limpeza avançada, tratamento de outliers e padronização.
+├── 📁 <span style="color:#ff66cc;">phase3/</span>        — Feature Engineering e geração de variáveis derivadas.
+├── 📁 <span style="color:#ff66cc;">phase4/</span>        — Modelagem inicial, testes de algoritmos e validações.
+├── 📁 <span style="color:#ff66cc;">phase5/</span>        — Treinamento avançado e otimização de hiperparâmetros.
+├── 📁 <span style="color:#ff66cc;">phase6/</span>        — Avaliação de performance, métricas, gráficos e relatórios.
+├── 📁 <span style="color:#ff66cc;">phase7/</span>        — Deploy, integração, pipeline final e automação do sistema.
 
-├── 📦 **modelo_caneca_pote.h5**  — Modelo treinado em Deep Learning (formato HDF5).
+├── 📄 <span style="color:#ff99dd;">README.md</span>              — Documentação geral do projeto.
+├── 📄 <span style="color:#ff99dd;">main.py</span>                — Script principal do pipeline do Agro System.
+├── 📄 <span style="color:#ff99dd;">tst.py</span>                 — Arquivos de testes rápidos e utilitários.
 
+├── 📄 <span style="color:#ffb3e6;">cocoa.csv</span>              — Base de dados referente à cultura de cacau.
+├── 📄 <span style="color:#ffb3e6;">oil_palm.csv</span>           — Base relacionada ao cultivo de dendê (oil palm).
+├── 📄 <span style="color:#ffb3e6;">rice.csv</span>               — Dados sobre produção e indicadores do arroz.
+├── 📄 <span style="color:#ffb3e6;">rubber.csv</span>             — Base referente à cultura da borracha natural.
 
+├── 📦 <span style="color:#ff4dc4;">modelo_caneca_pote.h5</span>  — Modelo treinado em Deep Learning (HDF5).
+    </pre>
+</div>
