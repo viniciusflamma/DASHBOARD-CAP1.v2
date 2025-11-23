@@ -9,10 +9,10 @@
 <br>
 
 ## Nome do projeto
-###  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
+####  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
 
 ## Nome do grupo
-### • Equipe Fiap
+#### • Equipe Fiap
 
 ## 👨‍🎓 Integrantes:
 - <a href="endrewalves42@gmail.com"> Endrew Alves dos Santos  • RM563646</a>
@@ -37,8 +37,6 @@ A solução integra sensores IoT, análise de séries temporais, visão computac
 Além do uso no campo, o sistema também incorpora uma camada avançada de análise industrial, permitindo detectar comportamentos anormais em equipamentos por meio de algoritmos especializados em anomalias temporais, garantindo segurança, eficiência e continuidade das operações.
 
 # 🎯 Objetivos do Sistema Consolidado
-
-O projeto busca unificar e entregar um sistema robusto, capaz de:
 
     • Reduzir falhas inesperadas por meio de monitoramento contínuo e análises preditivas.
 
