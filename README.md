@@ -23,9 +23,9 @@
 
 
 ## 👩‍🏫 Professores:
-### Tutor(a) 
+#### Tutor(a) 
 - <a href="profandre.chiovato@fiap.com.br">André Godoi Chiovato</a>
-### Coordenador(a)
+#### Coordenador(a)
 - <a href="proflucas.moreira@fiap.com.br">Lucas Gomes Moreira</a>
 
 ## 📜 Descrição
