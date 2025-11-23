@@ -105,58 +105,28 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
 
 ## 🤖 Modelo
 
-<div style="
-    background: linear-gradient(135deg, #000000, #1a001f, #ff007f);
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 0 20px #ff007f88;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    color: #ffffff;
-    border: 2px solid #ff007f;
-    background-image: url('data:image/svg+xml,\
-        <svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'200\\' height=\\'200\\'>\
-        <rect width=\\'100%\\' height=\\'100%\\' fill=\\'none\\'/>\
-        <circle cx=\\'50\\' cy=\\'50\\' r=\\'3\\' fill=\\'%23ff00aa33\\'/>\
-        <circle cx=\\'150\\' cy=\\'150\\' r=\\'2\\' fill=\\'%23ff00aa22\\'/>\
-        </svg>');
-    background-size: 200px;
-">
+<div align="center">
 
-    <marquee behavior="alternate" scrollamount="5">
-        <h1 style="font-size: 36px; color: #ff4dc4; text-shadow: 0 0 10px #ff4dc4;">
-            🚀✨ ESTRUTURA DO PROJETO — AGRO SYSTEM ✨🚀
-        </h1>
-    </marquee>
+```
+\033[1;35m📦 agro_system/\033[0m
+├── \033[1;34m📁 phase1/\033[0m        — \033[0;36mPré-processamento inicial dos dados e organização das bases.\033[0m
+├── \033[1;34m📁 phase2/\033[0m        — \033[0;36mLimpeza avançada, tratamento de outliers e padronização.\033[0m
+├── \033[1;34m📁 phase3/\033[0m        — \033[0;36mFeature Engineering e geração de variáveis derivadas.\033[0m
+├── \033[1;34m📁 phase4/\033[0m        — \033[0;36mModelagem inicial, testes de algoritmos e validações.\033[0m
+├── \033[1;34m📁 phase5/\033[0m        — \033[0;36mTreinamento avançado e otimização de hiperparâmetros.\033[0m
+├── \033[1;34m📁 phase6/\033[0m        — \033[0;36mAvaliação de performance, métricas, gráficos e relatórios.\033[0m
+├── \033[1;34m📁 phase7/\033[0m        — \033[0;36mDeploy, integração, pipeline final e automação do sistema.\033[0m
 
-    <pre style="
-        font-size: 16px;
-        background: #0a0a0a88;
-        padding: 20px;
-        border-radius: 12px;
-        overflow-x: auto;
-        border: 1px solid #ff4dc4;
-        box-shadow: inset 0 0 15px #ff008855;
-        color: #ffb3e6;
-    ">
+├── \033[1;33m📄 README.md\033[0m              — \033[0;36mDocumentação geral do projeto.\033[0m
+├── \033[1;33m📄 main.py\033[0m                — \033[0;36mScript principal do pipeline do Agro System.\033[0m
+├── \033[1;33m📄 tst.py\033[0m                 — \033[0;36mArquivos de testes rápidos e utilitários.\033[0m
 
-📦 <span style="color:#ff4dc4;">agro_system/</span>
-├── 📁 <span style="color:#ff66cc;">phase1/</span>        — Pré-processamento inicial dos dados e organização das bases.
-├── 📁 <span style="color:#ff66cc;">phase2/</span>        — Limpeza avançada, tratamento de outliers e padronização.
-├── 📁 <span style="color:#ff66cc;">phase3/</span>        — Feature Engineering e geração de variáveis derivadas.
-├── 📁 <span style="color:#ff66cc;">phase4/</span>        — Modelagem inicial, testes de algoritmos e validações.
-├── 📁 <span style="color:#ff66cc;">phase5/</span>        — Treinamento avançado e otimização de hiperparâmetros.
-├── 📁 <span style="color:#ff66cc;">phase6/</span>        — Avaliação de performance, métricas, gráficos e relatórios.
-├── 📁 <span style="color:#ff66cc;">phase7/</span>        — Deploy, integração, pipeline final e automação do sistema.
+├── \033[1;32m📄 cocoa.csv\033[0m              — \033[0;36mBase de dados referente à cultura de cacau.\033[0m
+├── \033[1;32m📄 oil_palm.csv\033[0m           — \033[0;36mBase relacionada ao cultivo de dendê (oil palm).\033[0m
+├── \033[1;32m📄 rice.csv\033[0m               — \033[0;36mDados sobre produção e indicadores do arroz.\033[0m
+├── \033[1;32m📄 rubber.csv\033[0m             — \033[0;36mBase referente à cultura da borracha natural.\033[0m
 
-├── 📄 <span style="color:#ff99dd;">README.md</span>              — Documentação geral do projeto.
-├── 📄 <span style="color:#ff99dd;">main.py</span>                — Script principal do pipeline do Agro System.
-├── 📄 <span style="color:#ff99dd;">tst.py</span>                 — Arquivos de testes rápidos e utilitários.
+├── \033[1;31m📦 modelo_caneca_pote.h5\033[0m  — \033[0;36mModelo treinado em Deep Learning (formato HDF5).\033[0m
+```
 
-├── 📄 <span style="color:#ffb3e6;">cocoa.csv</span>              — Base de dados referente à cultura de cacau.
-├── 📄 <span style="color:#ffb3e6;">oil_palm.csv</span>           — Base relacionada ao cultivo de dendê (oil palm).
-├── 📄 <span style="color:#ffb3e6;">rice.csv</span>               — Dados sobre produção e indicadores do arroz.
-├── 📄 <span style="color:#ffb3e6;">rubber.csv</span>             — Base referente à cultura da borracha natural.
-
-├── 📦 <span style="color:#ff4dc4;">modelo_caneca_pote.h5</span>  — Modelo treinado em Deep Learning (HDF5).
-    </pre>
 </div>
