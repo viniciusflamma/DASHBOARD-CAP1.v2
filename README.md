@@ -1,6 +1,7 @@
-<p align="center">
-## FIAP - Faculdade de Informática e Administração Paulista
+<p align="center" style="font-size: 26px; color: #5C0011; font-weight: bold; margin: 0;">
+    FIAP - Faculdade de Informática e Administração Paulista
 </p>
+
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="agro_system/assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
 </p>
