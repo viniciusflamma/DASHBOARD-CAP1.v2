@@ -9,10 +9,10 @@
 <br>
 
 ## Nome do projeto
-##  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
+###  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
 
 ## Nome do grupo
-## • Equipe Fiap
+### • Equipe Fiap
 
 ## 👨‍🎓 Integrantes:
 - <a href="endrewalves42@gmail.com"> Endrew Alves dos Santos  • RM563646</a>
