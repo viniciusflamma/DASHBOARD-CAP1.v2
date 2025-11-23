@@ -1,4 +1,4 @@
-<p align="center" style="font-size: 26px; color: #5C0011; font-weight: bold; margin: 0;">
+<p align="center" style="font-size: 40px; color: #5C0011; font-weight: bold; margin: 0;">
     FIAP - Faculdade de Informática e Administração Paulista
 </p>
 
