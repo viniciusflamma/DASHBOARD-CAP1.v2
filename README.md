@@ -104,7 +104,7 @@ Scripts de entrega final, pipeline automatizado, integração com dashboards e A
 | `rubber.csv` | Dados da produção de borracha |
 
 ## 🤖 Modelo
-
+'''
 <div style="
     background: linear-gradient(135deg, #000000, #1a001f, #ff007f);
     padding: 25px;
