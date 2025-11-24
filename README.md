@@ -166,6 +166,5 @@ A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
 
 🔷 Fluxograma Geral
-
 ![FLUXOGRAMA](./agro_system/assets/fluxograma.png)
 
