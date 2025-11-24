@@ -162,11 +162,8 @@ A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
 ## 🤖 Modelo
 
-<p align="center">
-<a href= "https://www.fiap.com.br/"><img src="agro_system/assets/estrutura.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
-</p>
-
 ![ESTRUTURA](./agro_system/assets/estrutura.png)
+
 
 🔷 Fluxograma Geral
 
