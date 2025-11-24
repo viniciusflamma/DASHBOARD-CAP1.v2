@@ -91,6 +91,12 @@ Condições para ligar a bomba:
     
     Caso um dos requisitos falhe, a bomba permanece desligada.
 
+##  📊 FASE 4 – Modelo Integrado de Apresentação das Fases do Projeto
+
+Com o objetivo de unificar todas as fases do desenvolvimento em um único projeto estruturado, adotou-se o Streamlit como interface principal de apresentação. Essa escolha foi fundamentada no fato de que a Fase 4 introduziu a ferramenta e culminou na construção de uma aplicação funcional utilizando esse framework.
+
+Assim, o arquivo main.py foi organizado para atuar como a aplicação centralizada, incorporando todas as fases anteriores dentro do modelo já estabelecido na Fase 4. Essa abordagem possibilita uma visualização integrada, coerente e de fácil navegação, preservando a continuidade conceitual e técnica do projeto como um todo.
+
 ## 🤖 Fase 5 — Machine Learning para Produtividade
 
 Modelos utilizados:
