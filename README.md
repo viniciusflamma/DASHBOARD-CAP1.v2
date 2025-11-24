@@ -46,7 +46,7 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
     • Integrar sensores físicos, inteligência artificial e dashboards em uma arquitetura única e escalável.
 
 # 📁 Estrutura de pastas
-```
+``
 ## 🌱 Fase 1 — Cálculo de Manejo
 
 O sistema calcula automaticamente a quantidade de insumo necessária para uma área baseada em:
