@@ -45,6 +45,12 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
     • Fornecer recomendações inteligentes baseadas em algoritmos de IA e modelos preditivos.
 
     • Integrar sensores físicos, inteligência artificial e dashboards em uma arquitetura única e escalável.
+    
+
+## ▶️ Demonstração em Vídeo
+
+[![Assista ao vídeo](https://img.youtube.com/vi/ID_DO_VIDEO/maxresdefault.jpg)](https://youtu.be/ID_DO_VIDEO)
+
 
 # 📁 Estrutura de pastas
 
