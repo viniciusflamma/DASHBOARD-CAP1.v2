@@ -47,122 +47,81 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
 
 # 📁 Estrutura de pastas
 
-🌱 Fase 1 — Cálculo de Manejo
+## 🌱 Fase 1 — Cálculo de Manejo
 
 O sistema calcula automaticamente a quantidade de insumo necessária para uma área baseada em:
+• Cultura plantada
+• Tipo de insumo (ex.: ureia, fósforo, NPK etc.)
+• Dimensões da área (largura × comprimento)
+• O cálculo de manejo determina quanto insumo o produtor deve usar e, consequentemente, comprar. Cada cultura exige quantidades diferentes, mesmo para áreas iguais.
 
-Cultura plantada
-
-Tipo de insumo (ex.: ureia, fósforo, NPK etc.)
-
-Dimensões da área (largura × comprimento)
-
-O cálculo de manejo determina quanto insumo o produtor deve usar e, consequentemente, comprar. Cada cultura exige quantidades diferentes, mesmo para áreas iguais.
-
-🐛 Fase 2 — Diagnóstico Climático e Risco de Pragas
+## 🐛 Fase 2 — Diagnóstico Climático e Risco de Pragas
 
 O sistema avalia o risco de pragas usando:
-
-Cultura selecionada
-
-Cidade informada
-
-Dados climáticos obtidos via API em tempo real
+• Cultura selecionada
+• Cidade informada
+• Dados climáticos obtidos via API em tempo real
 
 A lógica compara:
-
-Temperatura atual
-
-Parâmetros da cultura
+• Temperatura atual
+• Parâmetros da cultura
 
 E retorna diagnósticos, como:
+• Alto risco
+• Risco moderado
+• Baixo risco
 
-Alto risco
-
-Risco moderado
-
-Baixo risco
-
-💧 Fase 3 — Automação da Bomba de Água
+## 💧 Fase 3 — Automação da Bomba de Água
 
 A bomba é acionada automaticamente com base na saúde do solo.
 
 Parâmetros informados pelo usuário:
-
-pH
-
-Umidade
-
-Presença de fósforo
-
-Presença de potássio
+• pH
+• Umidade
+• Presença de fósforo
+• Presença de potássio
 
 Condições para ligar a bomba:
-
-Umidade abaixo de 30%
-
-pH entre 5 e 7
-
-Solo contém fósforo e potássio
+• Umidade abaixo de 30%
+• pH entre 5 e 7
+• Solo contém fósforo e potássio
 
 Caso um dos requisitos falhe, a bomba permanece desligada.
 
-✉️ Fase 4 — Alertas via AWS SNS
-
-Sempre que a bomba é ligada:
-
-Um alerta por e-mail é enviado automaticamente usando AWS SNS.
-
-Limitação técnica:
-
-O SNS só envia para e-mails pré-validados dentro da conta AWS.
-
-Não é permitido o usuário inserir um e-mail arbitrário para envio.
-
-🤖 Fase 5 — Machine Learning para Produtividade
+## 🤖 Fase 5 — Machine Learning para Produtividade
 
 Modelos utilizados:
-
-XGBoost
-
-Random Forest
-
-Regressão Linear
+• XGBoost
+• Random Forest
+• Regressão Linear
 
 Objetivo:
-
-Identificar padrões entre clima, umidade, chuva e época do ano
-
-Prever produtividade agrícola
-
-Encontrar condições ótimas ou prejudiciais à produção
+• Identificar padrões entre clima, umidade, chuva e época do ano
+• Prever produtividade agrícola
+• Encontrar condições ótimas ou prejudiciais à produção
 
 Dataset: fornecido pela FIAP, com variáveis climáticas e resultados históricos de produção.
 
-🖼️ Fase 6 — Visão Computacional com CNN
+## 🖼️ Fase 6 — Visão Computacional com CNN
 
 Sistema de classificação de imagens para identificar:
-
-Caneca
-
-Pote
+• Caneca
+• Pote
 
 Dataset:
-
-Imagens diversas
-
-Arquivos TXT contendo as bounding boxes (coordenadas dos objetos)
+• Imagens diversas
+• Arquivos TXT contendo as bounding boxes (coordenadas dos objetos)
 
 A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
 
-## 🤖 Modelo
+# 🤖 Modelo
 
-<img width="688" height="445" alt="image" src="https://github.com/user-attachments/assets/0c4e7d8b-8f55-4bf8-b196-f346207d5066" />
+<img width="816" height="372" alt="image" src="https://github.com/user-attachments/assets/43fd6bac-f92a-4364-87b0-79293ebb666b" />
 
 
 
-🔷 Fluxograma Geral
+# 🔷 Fluxograma Geral
 
 <img width="586" height="592" alt="image" src="https://github.com/user-attachments/assets/fa7bae97-e3a6-4d00-819c-7518b77da6a9" />
 
