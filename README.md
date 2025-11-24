@@ -120,7 +120,9 @@ A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
 ## FASE 3 -> MENSAGENS VIA E-MAIL
 <img width="1188" height="321" alt="image" src="https://github.com/user-attachments/assets/62dc6308-4b81-460b-9d9e-91ec1b835cfb" />
+
 ```
+
 import json
 import boto3
 import os
@@ -165,7 +167,9 @@ def lambda_handler(event, context):
     except Exception as e:
         print(f"Erro ao processar a requisição e publicar no SNS: {e}")
         return {"statusCode": 500, "body": json.dumps({"error": f"Erro interno do servidor: {str(e)}", "details": str(e)})}
+
 ```
+
 
 
 # 🤖 Modelo
