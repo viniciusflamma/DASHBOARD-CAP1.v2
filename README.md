@@ -116,6 +116,57 @@ Dataset:
 
 A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
+# API(s) UTILIZADAS
+
+## FASE 3 -> MENSAGENS VIA E-MAIL
+<img width="1188" height="321" alt="image" src="https://github.com/user-attachments/assets/62dc6308-4b81-460b-9d9e-91ec1b835cfb" />
+```
+import json
+import boto3
+import os
+
+def lambda_handler(event, context):
+    # 🚨 CORRIGIDO: Usando us-east-2 (Ohio), que é a sua região
+    sns_client = boto3.client("sns", region_name="us-east-2") 
+    
+    # Pega o ARN do Tópico da variável de ambiente (como configurado)
+    SNS_TOPIC_ARN = os.getenv("SNS_TOPIC_ARN")
+    
+    try:
+        # Pega o corpo da requisição JSON enviada pelo Streamlit
+        body_data = json.loads(event["body"])
+        
+        # Esperando os campos do Alerta Agrícola
+        sensor = body_data.get("sensor", "Desconhecido")
+        leitura = body_data.get("leitura", "N/A")
+        # Pega o conteúdo que será o corpo principal do e-mail
+        acao_corretiva = body_data.get("acao_corretiva", "Verificar sistema imediatamente.")
+        
+        # 1. Monta o corpo da mensagem que será enviada por E-MAIL/SMS (SNS)
+        # 🚨 ALTERAÇÃO: A mensagem agora é o conteúdo exato do campo 'acao_corretiva'
+        mensagem_alerta = acao_corretiva
+        
+        # 2. Publica a mensagem no SNS com um Subject apropriado
+        response = sns_client.publish(
+            TopicArn=SNS_TOPIC_ARN,
+            Message=mensagem_alerta, # Envia apenas o conteúdo formatado
+            # Subject para Alerta
+            Subject=f"ALERTA FARM-TECH: {sensor} - LEITURA {leitura}" 
+        )
+        
+        return {
+            "statusCode": 200,
+            "body": json.dumps({
+                "message": "Alerta SNS disparado com sucesso.",
+                "MessageId": response['MessageId']
+            })
+        }
+        
+    except Exception as e:
+        print(f"Erro ao processar a requisição e publicar no SNS: {e}")
+        return {"statusCode": 500, "body": json.dumps({"error": f"Erro interno do servidor: {str(e)}", "details": str(e)})}
+```
+
 
 # 🤖 Modelo
 
