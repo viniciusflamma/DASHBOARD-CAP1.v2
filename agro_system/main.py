@@ -160,63 +160,11 @@ if fase_selecionada == "Fase 1 - Dados e Cálculos":
 # ==================== FASE 2 ====================
 
 elif fase_selecionada == "Fase 2 - Banco de Dados":
-    st.header("🗃️ Fase 2 - Banco de Dados")
-
-    if not FASE2_PRONTA:
-        st.error("Módulo da Fase 2 não pôde ser importado.")
-    else:
-        st.success("Módulo carregado com sucesso!")
-
-        if st.button("Carregar Tabelas"):
-            tabelas = carregar_tabelas()
-            st.dataframe(tabelas)
-
-        if st.button("Executar Consultas"):
-            resultado = executar_consultas()
-            st.json(resultado)
-
-    st.image("https://cdn-icons-png.flaticon.com/512/553/553416.png", width=120)
-
     fase2()
 
 # ==================== FASE 3 ====================
 elif fase_selecionada == "Fase 3 - IoT":
-    st.header("📡 Fase 3 - IoT e Sensores (Simulação da Fase 4)")
-
-    # Coleta dos dados simulados
-    dados = ler_sensores_simulado()
-
-    st.subheader("📡 Leitura Atual dos Sensores")
-
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        st.metric("Umidade (%)", f"{dados['umidade']}%")
-
-    with col2:
-        st.metric("pH do Solo", dados["pH"])
-
-    with col3:
-        st.metric("Bomba de Irrigação",
-              "🌊 Ligada" if dados["bomba"] else "⛔ Desligada")
-    
-    st.subheader("💊 Nutrientes")
-    col4, col5 = st.columns(2)
-
-    with col4:
-        st.metric("Fósforo Detectado?", "Sim" if dados["fosforo"] else "Não")
-
-    with col5:
-        st.metric("Potássio Detectado?", "Sim" if dados["potassio"] else "Não")
-
-    st.markdown("### 📈 Detalhes Técnicos")
-    st.json(dados)
-
-    st.markdown('---')
-
     fase3()
-   
-
 
 # ==================== FASE 5 ====================
 elif fase_selecionada == "Fase 5 - Cloud":
@@ -226,22 +174,7 @@ elif fase_selecionada == "Fase 5 - Cloud":
     A Fase 5 é responsável pela parte de **Cloud Computing** do projeto,
     incluindo deploy, infraestrutura em nuvem, containers, serviços gerenciados
     e integração com o backend.
-
-    No momento, o módulo final da Fase 5 **ainda não foi entregue pelo time responsável**,
-    portanto esta tela será atualizada assim que o conteúdo for disponibilizado.
-
-    Quando integrado, esta tela incluirá:
-
-    ☁️ Deploy do sistema em nuvem  
-    🗄️ Serviços utilizados (S3, EC2, Lambda, etc.)  
-    🐳 Uso de containers (Docker)  
-    🔌 APIs e integrações  
-    📊 Monitoramento e logs  
-
     """)
-
-    st.warning("⏳ Aguardando a entrega do módulo final da Fase 5 pela equipe responsável.")
-    st.image("https://cdn-icons-png.flaticon.com/512/483/483361.png", width=120)
 
     fase5()
 
@@ -254,20 +187,7 @@ elif fase_selecionada == "Fase 6 - Visão Computacional":
     A Fase 6 é responsável por implementar recursos de **Visão Computacional** no projeto,
     como análise de imagens, detecção de pragas, classificação de folhas ou reconhecimento
     de padrões visuais em plantações.
-
-    No momento, o módulo oficial da Fase 6 **ainda não foi entregue pelo time responsável**, 
-    mas esta página está pronta para receber:
-
-    📷 Processamento de imagens  
-    🤖 Modelos de classificação  
-    🌿 Detecção de pragas/doenças  
-    🔍 Análise visual com Machine Learning  
-    📊 Visualização dos resultados  
-
     """)
-
-    st.warning("⏳ Aguardando a entrega do módulo final da Fase 6 pela equipe responsável.")
-    st.image("https://cdn-icons-png.flaticon.com/512/2920/2920243.png", width=120)
 
     fase6()
 
@@ -360,10 +280,11 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Status do Sistema")
 if FASE1_PRONTA:
     st.sidebar.success("✅ Fase 1 - Pronta")
+    st.sidebar.success("✅ Fase 2 - Pronta")
+    st.sidebar.success("✅ Fase 3 - Pronta")
+    st.sidebar.success("✅ Fase 5 - Pronta")
+    st.sidebar.success("✅ Fase 6 - Pronta")
 else:
     st.sidebar.error("❌ Fase 1 - Com problemas")
 
-st.sidebar.info("🟡 Fase 2 - Pendente")
-st.sidebar.info("🟡 Fase 3 - Pendente")
-st.sidebar.info("🟡 Fase 5 - Pendente")
-st.sidebar.info("🟡 Fase 6 - Pendente")
+

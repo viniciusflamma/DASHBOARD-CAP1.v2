@@ -59,7 +59,6 @@ class Phase1:
 
     def executar_analise_r(self):
         try:
-            # CORREÇÃO: Garantir que o CSV existe antes de executar R
             if not os.path.exists(self.csv_path):
                 return "Erro: Nenhum dado encontrado. Adicione dados primeiro."
             
