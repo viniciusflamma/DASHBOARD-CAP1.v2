@@ -162,10 +162,11 @@ A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
 ## 🤖 Modelo
 
-<img src="agro_system/assets/estrutura.png" alt="ESTRUTURA" width="200">
+![ESTRUTURA](agro_system/assets/estrutura.png)
+
 
 
 🔷 Fluxograma Geral
 
-<img src="agro_system/assets/fluxograma.png" alt="FLUXOGRAMA" width="200">
+![FLUXOGRAMA](agro_system/assets/fluxograma.png)
 
