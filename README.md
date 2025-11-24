@@ -2,7 +2,8 @@
     FIAP - Faculdade de Informática e Administração Paulista
 </p>
 
-<img width="1807" height="517" alt="image" src="https://github.com/user-attachments/assets/16bdb7ba-b770-4151-845d-221179f57a2b" />
+<img width="1505" height="409" alt="image" src="https://github.com/user-attachments/assets/3f0f1a43-37a1-4f86-9604-49f78b8f0eed" />
+
 
 
 ## Nome do projeto
