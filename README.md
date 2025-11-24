@@ -2,11 +2,8 @@
     FIAP - Faculdade de Informática e Administração Paulista
 </p>
 
-<p align="center">
-<a href= "https://www.fiap.com.br/"><img src="agro_system/assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
-</p>
+<img width="1807" height="517" alt="image" src="https://github.com/user-attachments/assets/16bdb7ba-b770-4151-845d-221179f57a2b" />
 
-<br>
 
 ## Nome do projeto
 ##  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
