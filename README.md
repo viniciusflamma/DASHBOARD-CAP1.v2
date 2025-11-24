@@ -116,7 +116,7 @@ Dataset:
 
 A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
-```
+
 # 🤖 Modelo
 
 <img width="816" height="372" alt="image" src="https://github.com/user-attachments/assets/43fd6bac-f92a-4364-87b0-79293ebb666b" />
