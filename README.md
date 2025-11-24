@@ -6,11 +6,11 @@
 
 
 
-# Nome do projeto
-##  - PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
+## Nome do projeto
+###  PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
 
-# Nome do grupo
-## - Equipe Fiap
+## Nome do grupo
+###  Equipe Fiap
 
 ## 👨‍🎓 Integrantes:
 - <a href="https://www.linkedin.com/in/endrew-alves-dos-santos-2ab783336/"> Endrew Alves dos Santos  • RM563646</a>
