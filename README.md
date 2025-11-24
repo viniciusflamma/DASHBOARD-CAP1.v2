@@ -1,21 +1,6 @@
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-
-<p align="center" 
-   style="
-        font-family: 'Montserrat', sans-serif;
-        font-size: 28px;
-        color: #5C0011;
-        font-weight: 600;
-        padding: 12px 20px;
-        border: 2px solid #5C0011;
-        border-radius: 10px;
-        display: inline-block;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
-        background: #fff;
-   ">
+<p align="center" style="font-size: 26px; color: #5C0011; font-weight: bold; margin: 0;">
     FIAP - Faculdade de Informática e Administração Paulista
 </p>
-
 
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="agro_system/assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
@@ -24,23 +9,23 @@
 <br>
 
 ## Nome do projeto
-####  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
+##  • PROJETO FASE  7 – A CONSOLIDAÇÃO DE UM SISTEMA
 
 ## Nome do grupo
-#### • Equipe Fiap
+## • Equipe Fiap
 
 ## 👨‍🎓 Integrantes:
-- <a href="endrewalves42@gmail.com"> Endrew Alves dos Santos  • RM563646</a>
+- <a href="https://www.linkedin.com/in/endrew-alves-dos-santos-2ab783336/"> Endrew Alves dos Santos  • RM563646</a>
 - <a href="nisoxds@gmail.com"> Vinícius Divino dos Santos  • RM566269</a>
-- <a href="carlos.souza004@gmail.com"> Carlos Eduardo de Souza  • RM566487</a>
+- <a href="https://www.linkedin.com/in/carlos-eduardo-b40b932a/"> Carlos Eduardo de Souza  • RM566487</a>
 - <a href="esteves.tayna96@gmail.com"> Tayná Esteves  • RM562491</a>
-- <a href="fontesjoaovittor@gmail.com"> João Vittor Fontes  • RM565999</a>
+- <a href="https://www.linkedin.com/in/jo%C3%A3ovittorfontes/"> João Vittor Fontes  • RM565999</a>
 
 
 ## 👩‍🏫 Professores:
-#### Tutor(a) 
+### Tutor(a) 
 - <a href="profandre.chiovato@fiap.com.br">André Godoi Chiovato</a>
-#### Coordenador(a)
+### Coordenador(a)
 - <a href="proflucas.moreira@fiap.com.br">Lucas Gomes Moreira</a>
 
 ## 📜 Descrição
@@ -53,6 +38,8 @@ Além do uso no campo, o sistema também incorpora uma camada avançada de anál
 
 # 🎯 Objetivos do Sistema Consolidado
 
+O projeto busca unificar e entregar um sistema robusto, capaz de:
+
     • Reduzir falhas inesperadas por meio de monitoramento contínuo e análises preditivas.
 
     • Identificar anomalias em tempo real, tanto na lavoura quanto em ambientes industriais.
@@ -63,93 +50,155 @@ Além do uso no campo, o sistema também incorpora uma camada avançada de anál
 
 # 📁 Estrutura de pastas
 
-## 🌱Estrutura do Repositório
+🌱 Fase 1 — Cálculo de Manejo
 
-### 📘 phase1 — Preparação Inicial
-Contém scripts e rotinas necessárias para organizar os datasets brutos, remover inconsistências básicas e padronizar formatos.
+O sistema calcula automaticamente a quantidade de insumo necessária para uma área baseada em:
 
-### 📙 phase2 — Limpeza e Tratamento de Dados
-Envolve tratamento de outliers, normalização, substituição de valores ausentes e ajustes finos na integridade do dataset.
+Cultura plantada
 
-### 📗 phase3 — Feature Engineering
-Geração de novas variáveis, enriquecimento dos dados e transformações avançadas necessárias para melhorar o modelo.
+Tipo de insumo (ex.: ureia, fósforo, NPK etc.)
 
-### 📕 phase4 — Modelagem
-Modelos preliminares, testes exploratórios e validação cruzada inicial.
+Dimensões da área (largura × comprimento)
 
-### 📔 phase5 — Otimização
-Overfitting control, tuning de hiperparâmetros e melhorias na performance dos modelos.
+O cálculo de manejo determina quanto insumo o produtor deve usar e, consequentemente, comprar. Cada cultura exige quantidades diferentes, mesmo para áreas iguais.
 
-### 📓 phase6 — Avaliação
-Relatórios, métricas, gráficos comparativos e documentação dos resultados.
+🐛 Fase 2 — Diagnóstico Climático e Risco de Pragas
 
-### 📒 phase7 — Deploy / Pipeline Final
-Scripts de entrega final, pipeline automatizado, integração com dashboards e APIs.
+O sistema avalia o risco de pragas usando:
 
----
+Cultura selecionada
 
-## 📂 Arquivos Gerais
+Cidade informada
 
-- **README.md** — Documentação oficial do projeto  
-- **main.py** — Script principal, coordenando todo o pipeline  
-- **tst.py** — Arquivos de teste/diagnóstico  
+Dados climáticos obtidos via API em tempo real
 
-## 📊 Bases de Dados
+A lógica compara:
 
-| Arquivo | Descrição |
-|--------|-----------|
-| `cocoa.csv` | Dados sobre produção de cacau |
-| `oil_palm.csv` | Informações sobre a cultura de palma de óleo |
-| `rice.csv` | Indicadores e métricas do arroz |
-| `rubber.csv` | Dados da produção de borracha |
+Temperatura atual
+
+Parâmetros da cultura
+
+E retorna diagnósticos, como:
+
+Alto risco
+
+Risco moderado
+
+Baixo risco
+
+💧 Fase 3 — Automação da Bomba de Água
+
+A bomba é acionada automaticamente com base na saúde do solo.
+
+Parâmetros informados pelo usuário:
+
+pH
+
+Umidade
+
+Presença de fósforo
+
+Presença de potássio
+
+Condições para ligar a bomba:
+
+Umidade abaixo de 30%
+
+pH entre 5 e 7
+
+Solo contém fósforo e potássio
+
+Caso um dos requisitos falhe, a bomba permanece desligada.
+
+✉️ Fase 4 — Alertas via AWS SNS
+
+Sempre que a bomba é ligada:
+
+Um alerta por e-mail é enviado automaticamente usando AWS SNS.
+
+Limitação técnica:
+
+O SNS só envia para e-mails pré-validados dentro da conta AWS.
+
+Não é permitido o usuário inserir um e-mail arbitrário para envio.
+
+🤖 Fase 5 — Machine Learning para Produtividade
+
+Modelos utilizados:
+
+XGBoost
+
+Random Forest
+
+Regressão Linear
+
+Objetivo:
+
+Identificar padrões entre clima, umidade, chuva e época do ano
+
+Prever produtividade agrícola
+
+Encontrar condições ótimas ou prejudiciais à produção
+
+Dataset: fornecido pela FIAP, com variáveis climáticas e resultados históricos de produção.
+
+🖼️ Fase 6 — Visão Computacional com CNN
+
+Sistema de classificação de imagens para identificar:
+
+Caneca
+
+Pote
+
+Dataset:
+
+Imagens diversas
+
+Arquivos TXT contendo as bounding boxes (coordenadas dos objetos)
+
+A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
+
+
 
 ## 🤖 Modelo
-<div style="
-    background: linear-gradient(135deg, #000000, #1a001f, #ff007f);
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 0 20px #ff007f88;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    color: #ffffff;
-    border: 2px solid #ff007f;
-">
+- `modelo_caneca_pote.h5` — Modelo neural utilizado no projeto, armazenado em formato HDF5.
+📦 agro_system/
+├── 📁 phase1/       — Cálculo de manejo e insumos
+├── 📁 phase2/       — Diagnóstico de pragas via API
+├── 📁 phase3/       — Bomba de irrigação automática
+├── 📁 phase4/       — Envio de alertas AWS SNS
+├── 📁 phase5/       — Machine Learning (produtividade)
+├── 📁 phase6/       — Visão Computacional (CNN)
+│
+├── 📄 README.md
+├── 📄 main.py
+└── 📄 modelo_caneca_pote.h5
 
-    <marquee behavior="alternate" scrollamount="5">
-        <h1 style="font-size: 36px; color: #ff4dc4; text-shadow: 0 0 10px #ff4dc4;">
-            🚀✨ ESTRUTURA DO PROJETO — AGRO SYSTEM ✨🚀
-        </h1>
-    </marquee>
+🔷 Fluxograma Geral
 
-    <pre style="
-        font-size: 16px;
-        background: #0a0a0a88;
-        padding: 20px;
-        border-radius: 12px;
-        overflow-x: auto;
-        border: 1px solid #ff4dc4;
-        box-shadow: inset 0 0 15px #ff008855;
-        color: #ffb3e6;
-        white-space: pre;
-    ">
 
-📦 <span style="color:#ff4dc4;">agro_system/</span>
-├── 📁 <span style="color:#ff66cc;">phase1/</span>        — Pré-processamento inicial dos dados e organização das bases.
-├── 📁 <span style="color:#ff66cc;">phase2/</span>        — Limpeza avançada, tratamento de outliers e padronização.
-├── 📁 <span style="color:#ff66cc;">phase3/</span>        — Feature Engineering e geração de variáveis derivadas.
-├── 📁 <span style="color:#ff66cc;">phase4/</span>        — Modelagem inicial, testes de algoritmos e validações.
-├── 📁 <span style="color:#ff66cc;">phase5/</span>        — Treinamento avançado e otimização de hiperparâmetros.
-├── 📁 <span style="color:#ff66cc;">phase6/</span>        — Avaliação de performance, métricas, gráficos e relatórios.
-├── 📁 <span style="color:#ff66cc;">phase7/</span>        — Deploy, integração, pipeline final e automação do sistema.
+                      ┌─────────────────┐
+                      │   Início        │
+                      └───────┬─────────┘
+                              │
+       ┌──────────────────────┼───────────────────────────┐
+       │                      │                            │
+ ┌─────▼─────┐         ┌─────▼──────┐               ┌─────▼──────┐
+ │ Fase 1    │         │ Fase 2      │               │ Fase 3      │
+ │ Manejo    │         │ Pragas/API  │               │ Bomba Água  │
+ └─────┬─────┘         └─────┬──────┘               └─────┬──────┘
+       │                      │                            │
+       ▼                      ▼                            ▼
+ Cálculo de insumo    Diagnóstico climático         Liga/Desliga bomba
+                            │                            │
+                            └────────► Envio e-mail (F4) ◄┘
+                                    │
+                     ┌──────────────┴───────────────┐
+                     │                              │
+               ┌─────▼──────┐               ┌───────▼───────┐
+               │  Fase 5     │               │   Fase 6       │
+               │ Machine L.  │               │ CNN (Visão)    │
+               └─────┬──────┘               └──────┬────────┘
+                     │                              │
+                     └──────────────► Sistema Final ◄──────────────┘
 
-├── 📄 <span style="color:#ff99dd;">README.md</span>              — Documentação geral do projeto.
-├── 📄 <span style="color:#ff99dd;">main.py</span>                — Script principal do pipeline do Agro System.
-├── 📄 <span style="color:#ff99dd;">tst.py</span>                 — Arquivos de testes rápidos e utilitários.
-
-├── 📄 <span style="color:#ffb3e6;">cocoa.csv</span>              — Base de dados referente à cultura de cacau.
-├── 📄 <span style="color:#ffb3e6;">oil_palm.csv</span>           — Base relacionada ao cultivo de dendê (oil palm).
-├── 📄 <span style="color:#ffb3e6;">rice.csv</span>               — Dados sobre produção e indicadores do arroz.
-├── 📄 <span style="color:#ffb3e6;">rubber.csv</span>             — Base referente à cultura da borracha natural.
-
-├── 📦 <span style="color:#ff4dc4;">modelo_caneca_pote.h5</span>  — Modelo treinado em Deep Learning (HDF5).
-    </pre>
-</div>
