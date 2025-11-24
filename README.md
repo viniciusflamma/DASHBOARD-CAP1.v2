@@ -161,6 +161,8 @@ A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
 
 ## 🤖 Modelo
+<img width="688" height="445" alt="image" src="https://github.com/user-attachments/assets/0c4e7d8b-8f55-4bf8-b196-f346207d5066" />
+
 
 ![ESTRUTURA](./agro_system/assets/estrutura.png)
 
