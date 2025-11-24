@@ -49,7 +49,7 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
 
 ## ▶️ Demonstração em Vídeo
 
-[![Assista ao vídeo](https://img.youtube.com/vi/ID_DO_VIDEO/maxresdefault.jpg)](https://youtu.be/ID_DO_VIDEO)
+[![Assista ao vídeo](https://img.youtube.com/vi/wWH7VW03uvY/maxresdefault.jpg)](https://www.youtube.com/watch?v=wWH7VW03uvY)
 
 
 # 📁 Estrutura de pastas
@@ -195,3 +195,11 @@ def lambda_handler(event, context):
 
 <img width="586" height="592" alt="image" src="https://github.com/user-attachments/assets/fa7bae97-e3a6-4d00-819c-7518b77da6a9" />
 
+
+## 📚 Considerações Finais
+
+A consolidação deste sistema representa a integração coordenada de múltiplas tecnologias — IoT, visão computacional, machine learning, automação e interfaces interativas. Ao unificar todas as fases em uma aplicação coesa, o projeto demonstra a evolução técnica e conceitual do grupo, além de oferecer uma solução escalável e aplicável a diferentes setores da economia.
+
+A arquitetura desenvolvida evidencia a capacidade de transformar desafios reais em soluções tecnológicas estruturadas, incorporando desde análises ambientais até detecção de anomalias industriais e classificações visuais automatizadas. Essa abordagem multidisciplinar favorece não apenas o alinhamento entre teoria e prática, mas também a compreensão sistêmica dos diversos componentes que formam um ecossistema inteligente de gestão.
+
+Espera-se que este material — aliado à demonstração em vídeo e à documentação técnica — contribua para uma análise clara, completa e fundamentada do trabalho realizado, evidenciando o compromisso da equipe com rigor acadêmico, inovação e aplicabilidade prática.
