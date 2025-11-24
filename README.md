@@ -52,6 +52,18 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
 [![Assista ao vídeo](https://img.youtube.com/vi/wWH7VW03uvY/maxresdefault.jpg)](https://www.youtube.com/watch?v=wWH7VW03uvY)
 
 
+# 🧩 Instruções para execução do projeto
+
+Para executar o projeto corretamente, execute apenas o arquivo main.py, localizado na pasta agro_system.
+A execução de qualquer outro arquivo de forma direta pode causar erros e impedir o funcionamento adequado do sistema.
+
+```
+python agro_system/main.py
+
+```
+
+<img width="311" height="478" alt="image" src="https://github.com/user-attachments/assets/146efb59-8462-4a1e-b097-d4d607e8281d" />
+
 # 📁 Estrutura de pastas
 
 ## 🌱 Fase 1 — Cálculo de Manejo
