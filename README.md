@@ -46,71 +46,71 @@ O projeto busca unificar e entregar um sistema robusto, capaz de:
     • Integrar sensores físicos, inteligência artificial e dashboards em uma arquitetura única e escalável.
 
 # 📁 Estrutura de pastas
-
+```
 ## 🌱 Fase 1 — Cálculo de Manejo
 
 O sistema calcula automaticamente a quantidade de insumo necessária para uma área baseada em:
-• Cultura plantada
-• Tipo de insumo (ex.: ureia, fósforo, NPK etc.)
-• Dimensões da área (largura × comprimento)
-• O cálculo de manejo determina quanto insumo o produtor deve usar e, consequentemente, comprar. Cada cultura exige quantidades diferentes, mesmo para áreas iguais.
+    • Cultura plantada
+    • Tipo de insumo (ex.: ureia, fósforo, NPK etc.)
+    • Dimensões da área (largura × comprimento)
+    • O cálculo de manejo determina quanto insumo o produtor deve usar e, consequentemente, comprar. Cada cultura exige quantidades diferentes, mesmo para áreas iguais.
 
 ## 🐛 Fase 2 — Diagnóstico Climático e Risco de Pragas
 
 O sistema avalia o risco de pragas usando:
-• Cultura selecionada
-• Cidade informada
-• Dados climáticos obtidos via API em tempo real
+    • Cultura selecionada
+    • Cidade informada
+    • Dados climáticos obtidos via API em tempo real
 
 A lógica compara:
-• Temperatura atual
-• Parâmetros da cultura
+    • Temperatura atual
+    • Parâmetros da cultura
 
 E retorna diagnósticos, como:
-• Alto risco
-• Risco moderado
-• Baixo risco
+    • Alto risco
+    • Risco moderado
+    • Baixo risco
 
 ## 💧 Fase 3 — Automação da Bomba de Água
 
 A bomba é acionada automaticamente com base na saúde do solo.
 
 Parâmetros informados pelo usuário:
-• pH
-• Umidade
-• Presença de fósforo
-• Presença de potássio
+    • pH
+    • Umidade
+    • Presença de fósforo
+    • Presença de potássio
 
 Condições para ligar a bomba:
-• Umidade abaixo de 30%
-• pH entre 5 e 7
-• Solo contém fósforo e potássio
+    • Umidade abaixo de 30%
+    • pH entre 5 e 7
+    • Solo contém fósforo e potássio
 
 Caso um dos requisitos falhe, a bomba permanece desligada.
 
 ## 🤖 Fase 5 — Machine Learning para Produtividade
 
 Modelos utilizados:
-• XGBoost
-• Random Forest
-• Regressão Linear
+    • XGBoost
+    • Random Forest
+    • Regressão Linear
 
 Objetivo:
-• Identificar padrões entre clima, umidade, chuva e época do ano
-• Prever produtividade agrícola
-• Encontrar condições ótimas ou prejudiciais à produção
+    • Identificar padrões entre clima, umidade, chuva e época do ano
+    • Prever produtividade agrícola
+    • Encontrar condições ótimas ou prejudiciais à produção
 
 Dataset: fornecido pela FIAP, com variáveis climáticas e resultados históricos de produção.
 
 ## 🖼️ Fase 6 — Visão Computacional com CNN
 
 Sistema de classificação de imagens para identificar:
-• Caneca
-• Pote
+    • Caneca
+    • Pote
 
 Dataset:
-• Imagens diversas
-• Arquivos TXT contendo as bounding boxes (coordenadas dos objetos)
+    • Imagens diversas
+    • Arquivos TXT contendo as bounding boxes (coordenadas dos objetos)
 
 A CNN aprende a reconhecer padrões visuais e realiza a classificação final.
 
